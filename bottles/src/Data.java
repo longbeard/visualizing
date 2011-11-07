@@ -167,9 +167,7 @@ public class Data {
 	 */
 	private static int getNextValidYear(String indicator, String country, int year) {
 
-		System.out.println("next(" + year + ")");
 		for (int yearInteger = year + 1; yearInteger <= 2010; yearInteger++) {
-			System.out.println(yearInteger);
 			if (normalizedDatabase.get(indicator).get(country).containsKey(yearInteger + ""))
 				return yearInteger;
 		}
@@ -185,9 +183,7 @@ public class Data {
 	 */
 	private static int getPreviousValidYear(String indicator, String country, int year) {
 
-		System.out.println("previous(" + year + ")");
 		for (int yearInteger = year - 1; yearInteger >= 1990; yearInteger--) {
-			System.out.println(yearInteger);
 			if (normalizedDatabase.get(indicator).get(country).containsKey(yearInteger + ""))
 				return yearInteger;
 		}
@@ -220,7 +216,6 @@ public class Data {
 	 */
 	private static void parse(String fileName) {
 
-		System.out.println(classLoader);
 		CSVReader reader = new CSVReader(new InputStreamReader(classLoader.getResourceAsStream(fileName)));
 
 		HashMap<String, HashMap<String, Float>> data = new HashMap<String, HashMap<String, Float>>();
