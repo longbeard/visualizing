@@ -12,7 +12,7 @@ import processing.core.PConstants;
 public class Bottle implements Iterable<Segment> {
 
 	// number of sides to be rendered
-	public static final int SIDES = 20;
+	public static final int SIDES = 500;
 
 	// view
 	private PApplet parent;

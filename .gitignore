@@ -1,3 +1,4 @@
 .metadata/**
 bottles/bin/**
 bottles/build/**
+bottles/.classpath

@@ -179,7 +179,7 @@ public class View extends PApplet {
 		rotationY = PI / 3;
 		scale = 1;
 		translationX = 520;
-		translationY = height / 2;
+		translationY = height/2;
 	}
 
 	/**
