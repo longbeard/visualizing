@@ -36,8 +36,8 @@ public class View extends PApplet {
 		});
 
 		ArrayList<Segment> timeSegments = new ArrayList<Segment>();
-		timeSegments.add(new Segment(20, 1990, 20, 2010));
-		timeSegments.add(new Segment(30, 2010, 0, 2012));
+		timeSegments.add(new Segment(5, 1990, 5, 2010));
+		timeSegments.add(new Segment(10, 2010, 0, 2011));
 
 		timeBottle = new Bottle(this, timeSegments, 0, 0, 0, 0, 0, 0, 200);
 

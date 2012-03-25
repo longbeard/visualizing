@@ -19,6 +19,8 @@ public class Bottle implements Iterable<Segment> {
 
 	// segments
 	private ArrayList<Segment> segments;
+
+	// appending segments
 	private boolean appendSegment = false;
 	private float pRadius, pTime;
 
